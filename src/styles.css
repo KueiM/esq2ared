@@ -157,3 +157,20 @@
 @media(max-width:809px){.store-announcement{margin-top:48px}}
 
 @media(max-width:380px){.brand{font-size:18px}.menu-toggle{width:48px}.header-actions{margin-right:4px;gap:0}.header-actions>button:first-child{font-size:10px}}
+
+/* Social studio: an editorial invitation with drawn accents. */
+.social-studio{display:grid;grid-template-columns:1fr 1.1fr;gap:10%;padding:88px max(32px,5.55vw);background:var(--accent);color:#fff;position:relative;overflow:hidden}
+.social-kicker,.social-index{font:10px/1.4 TextMedium;letter-spacing:.14em}
+.social-intro h2{font:clamp(64px,7.8vw,112px)/.88 DisplayBlack;letter-spacing:-.055em;margin:28px 0 24px}
+.social-intro h2>span{position:relative;display:inline-block;color:#e5c9f4}
+.social-intro h2>span:after{content:"";position:absolute;left:0;right:-8%;bottom:-8px;height:12px;border-top:3px solid #e5c9f4;border-radius:50%;transform:rotate(-4deg)}
+.social-intro p{font:15px/1.6 TextMedium;margin-top:34px;color:#ecdfef}
+.social-links{align-self:center;min-width:0}
+.social-link{display:block;padding:24px 0;border-top:1px solid #ffffff50;position:relative;transition:color .2s}
+.social-link:nth-child(2){border-bottom:1px solid #ffffff50}
+.social-name{display:flex;align-items:center;gap:16px;font:clamp(28px,3.5vw,52px)/1.2 DisplayBlack;letter-spacing:-.04em;margin:14px 0 8px}
+.social-name svg{flex-shrink:0}.social-arrow{margin-left:auto;display:inline-block;font:40px/1 TextMedium;transition:transform .25s}
+.social-handle{font:13px/1.4 TextMedium;color:#ecdfef}
+.social-link:hover,.social-link:focus-visible{color:#e5c9f4}.social-link:hover .social-arrow,.social-link:focus-visible .social-arrow{transform:translate(5px,-5px)}
+.social-signature{display:block;margin-top:26px;font:italic 20px/1.3 Georgia,serif;text-align:right;transform:rotate(-3deg);color:#e5c9f4}
+@media(max-width:700px){.social-studio{grid-template-columns:1fr;gap:40px;padding:56px 24px}.social-intro h2{font-size:76px}.social-name{font-size:36px}.social-intro p{font-size:14px}.social-link{padding:22px 0}.social-signature{font-size:18px}}
